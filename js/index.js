@@ -92,3 +92,15 @@ visionH4.textContent = (siteContent["main-content"]["vision-h4"]);
 
 let visionContent = document.querySelector('.bottom-content div:nth-child(3) p');
 visionContent.textContent = (siteContent["main-content"]["vision-content"]);
+
+let contactH4 = document.querySelector('.contact h4');
+contactH4.textContent = (siteContent["contact"]["contact-h4"]);
+
+let contactAddress = document.querySelector('.contact p');
+contactAddress.textContent =  (siteContent["contact"]["address"]);
+
+let contactPhone = document.querySelector('.contact p:nth-child(3)');
+contactPhone.textContent =  (siteContent["contact"]["phone"]);
+
+let contactEmail = document.querySelector('.contact p:nth-child(4)');
+contactEmail.textContent =  (siteContent["contact"]["email"]);
