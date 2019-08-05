@@ -111,4 +111,19 @@ footerCopyright.textContent =  (siteContent["footer"]["copyright"]);
 
 nav.forEach((element)=> {
   element.style.color ="green";
-})
+});
+
+let newA1= document.createElement('a');
+newA1.textContent ="blog";
+console.log(newA1);
+newA1.style.color = "green";
+
+let newA2= document.createElement('a');
+newA2.textContent ="Ideas";
+console.log(newA2);
+newA2.style.color = "green";
+
+let navigation = document.querySelector('nav');
+console.log(navigation);
+navigation.append(newA1);
+navigation.prepend(newA2);
