@@ -127,3 +127,23 @@ let navigation = document.querySelector('nav');
 console.log(navigation);
 navigation.append(newA1);
 navigation.prepend(newA2);
+
+/// stretch style changes
+
+let mainP = document.querySelectorAll('.main-content p');
+mainP.forEach((element)=> {
+  element.style.fontWeight = 400;
+  element.style.fontSize = '16px';
+  element.style.color = 'green';
+});
+
+contactH4.style.fontSize = "30px";
+
+let contactInfo = document.querySelectorAll('.contact p');
+contactInfo.forEach((element)=> {
+  element.style.fontWeight = 500;
+  element.style.fontSize = '20px';
+  element.style.color = 'blue';
+});
+
+
