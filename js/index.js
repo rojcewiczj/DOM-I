@@ -60,3 +60,12 @@ button.textContent = (siteContent.cta.button);
 let img = document.getElementById ('cta-img');
 img.setAttribute('src' , siteContent.cta["img-src"]);
 
+let featuresH4 = document.querySelector('h4:first-of-type');
+featuresH4.textContent = (siteContent["main-content"]["features-h4"]);
+
+let featuresContent = document.querySelector('p:first-of-type');
+featuresContent.textContent =(siteContent["main-content"]["features-content"]);
+
+
+
+
