@@ -57,3 +57,6 @@ let button = document.querySelector('button');
 button.textContent = (siteContent.cta.button);
 
 
+let img = document.getElementById ('cta-img');
+img.setAttribute('src' , siteContent.cta["img-src"]);
+
