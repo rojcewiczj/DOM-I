@@ -104,3 +104,11 @@ contactPhone.textContent =  (siteContent["contact"]["phone"]);
 
 let contactEmail = document.querySelector('.contact p:nth-child(4)');
 contactEmail.textContent =  (siteContent["contact"]["email"]);
+
+let footerCopyright = document.querySelector('footer p');
+footerCopyright.textContent =  (siteContent["footer"]["copyright"]);
+
+
+nav.forEach((element)=> {
+  element.style.color ="green";
+})
