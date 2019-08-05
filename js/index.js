@@ -66,6 +66,12 @@ featuresH4.textContent = (siteContent["main-content"]["features-h4"]);
 let featuresContent = document.querySelector('p:first-of-type');
 featuresContent.textContent =(siteContent["main-content"]["features-content"]);
 
+let aboutH4 = document.querySelector('.top-content div:last-of-type h4');
+aboutH4.textContent = (siteContent["main-content"]["about-h4"]);
 
+let aboutContent = document.querySelector('.top-content div:last-of-type p');
+aboutH4.textContent = (siteContent["main-content"]["about-content"]);
 
+let middleImg = document.getElementById ('middle-img');
+middleImg.setAttribute('src' , siteContent["main-content"]["middle-img-src"]);
 
