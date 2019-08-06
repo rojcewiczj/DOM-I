@@ -40,3 +40,110 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const nav = document.querySelectorAll('a');
+console.log(nav[0]);
+nav[0].textContent = siteContent.nav["nav-item-1"];
+nav[1].textContent = siteContent.nav["nav-item-2"];
+nav[2].textContent = siteContent.nav["nav-item-3"];
+nav[3].textContent = siteContent.nav["nav-item-4"];
+nav[4].textContent = siteContent.nav["nav-item-5"];
+nav[5].textContent = siteContent.nav["nav-item-6"];
+
+let h1 = document.querySelector('h1');
+h1.textContent = (siteContent.cta.h1);
+
+let button = document.querySelector('button');
+button.textContent = (siteContent.cta.button);
+
+
+let img = document.getElementById ('cta-img');
+img.setAttribute('src' , siteContent.cta["img-src"]);
+
+let featuresH4 = document.querySelector('h4:first-of-type');
+featuresH4.textContent = (siteContent["main-content"]["features-h4"]);
+
+let featuresContent = document.querySelector('p:first-of-type');
+featuresContent.textContent =(siteContent["main-content"]["features-content"]);
+
+let aboutH4 = document.querySelector('.top-content div:last-of-type h4');
+aboutH4.textContent = (siteContent["main-content"]["about-h4"]);
+
+let aboutContent = document.querySelector('.top-content div:last-of-type p');
+aboutContent.textContent = (siteContent["main-content"]["about-content"]);
+
+let middleImg = document.getElementById ('middle-img');
+middleImg.setAttribute('src' , siteContent["main-content"]["middle-img-src"]);
+
+let servicesH4 = document.querySelector('.bottom-content div:nth-child(1) h4');
+servicesH4.textContent = (siteContent["main-content"]["services-h4"]);
+
+let servicesContent = document.querySelector('.bottom-content div:nth-child(1) p');
+servicesContent.textContent = (siteContent["main-content"]["services-content"]);
+
+let productH4 = document.querySelector('.bottom-content div:nth-child(2) h4');
+productH4.textContent = (siteContent["main-content"]["product-h4"]);
+
+let productContent = document.querySelector('.bottom-content div:nth-child(2) p');
+productContent.textContent = (siteContent["main-content"]["product-content"]);
+
+let visionH4 = document.querySelector('.bottom-content div:nth-child(3) h4');
+visionH4.textContent = (siteContent["main-content"]["vision-h4"]);
+
+let visionContent = document.querySelector('.bottom-content div:nth-child(3) p');
+visionContent.textContent = (siteContent["main-content"]["vision-content"]);
+
+let contactH4 = document.querySelector('.contact h4');
+contactH4.textContent = (siteContent["contact"]["contact-h4"]);
+
+let contactAddress = document.querySelector('.contact p');
+contactAddress.textContent =  (siteContent["contact"]["address"]);
+
+let contactPhone = document.querySelector('.contact p:nth-child(3)');
+contactPhone.textContent =  (siteContent["contact"]["phone"]);
+
+let contactEmail = document.querySelector('.contact p:nth-child(4)');
+contactEmail.textContent =  (siteContent["contact"]["email"]);
+
+let footerCopyright = document.querySelector('footer p');
+footerCopyright.textContent =  (siteContent["footer"]["copyright"]);
+
+
+nav.forEach((element)=> {
+  element.style.color ="green";
+});
+
+let newA1= document.createElement('a');
+newA1.textContent ="blog";
+console.log(newA1);
+newA1.style.color = "green";
+
+let newA2= document.createElement('a');
+newA2.textContent ="Ideas";
+console.log(newA2);
+newA2.style.color = "green";
+
+let navigation = document.querySelector('nav');
+console.log(navigation);
+navigation.append(newA1);
+navigation.prepend(newA2);
+
+/// stretch style changes
+
+let mainP = document.querySelectorAll('.main-content p');
+mainP.forEach((element)=> {
+  element.style.fontWeight = 400;
+  element.style.fontSize = '16px';
+  element.style.color = 'green';
+});
+
+contactH4.style.fontSize = "30px";
+
+let contactInfo = document.querySelectorAll('.contact p');
+contactInfo.forEach((element)=> {
+  element.style.fontWeight = 500;
+  element.style.fontSize = '20px';
+  element.style.color = 'blue';
+});
+
+
